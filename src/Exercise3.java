@@ -5,7 +5,7 @@ public class Exercise3 {
     public static void main(String[] args) {
 
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newdb", "developer", "password");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newdb", "developer", "passwordhere");
             Statement statement = conn.createStatement();
 
             String altertable = "ALTER TABLE students ADD country VARCHAR(30)";

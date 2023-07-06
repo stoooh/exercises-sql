@@ -33,10 +33,8 @@ public class JDBC2 {
 
             while (resultSet.next()) {
                 String lastName = resultSet.getString("last_name");
-                String firstName = resultSet.getString("first_name");
-                System.out.println(firstName + " " + lastName);
                 surnames.add(lastName);
-                surnames.add(firstName);
+                System.out.println(lastName);
             }
 
             System.out.println("\nSurnames of students:");
